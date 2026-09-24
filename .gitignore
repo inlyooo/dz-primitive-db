@@ -12,4 +12,5 @@ wheels/
 .ruff_cache/
 .pytest_cache/
 db_meta.json
+db_meta.json.tmp
 data/

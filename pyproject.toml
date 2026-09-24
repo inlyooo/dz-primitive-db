@@ -1,0 +1,32 @@
+[project]
+name = "primitive-db"
+version = "0.1.0"
+description = "Учебная консольная база данных с хранением в JSON"
+readme = "README.md"
+authors = [
+    { name = "Дмитрий Кислицын", email = "158076296+inlyooo@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "prettytable>=3.18.0",
+    "prompt>=0.4.1",
+]
+
+[project.scripts]
+database = "primitive_db.main:main"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[build-system]
+requires = ["uv_build>=0.11.16,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.8",
+]
